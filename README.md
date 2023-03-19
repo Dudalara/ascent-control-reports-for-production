@@ -39,4 +39,4 @@ Projeto realizado para disciplina Tópicos Especiais em Web com o tema Relatóri
  
  
  [ ] Formatar a apresentação de dados com Pipes.
- [ ] Build e deploy da aplicação.
+ - [ ] Build e deploy da aplicação.
