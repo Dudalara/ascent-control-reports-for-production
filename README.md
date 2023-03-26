@@ -2,6 +2,8 @@
 
 Projeto realizado para disciplina Tópicos Especiais em Web com o tema Relatórios de controle de subida para produção. O objetivo do sistema é registrar quando e o que foi atualizado nas atualizações que sobem para produção.
 
+# Protótipo 
+https://www.figma.com/file/gGRtZy5LVf569DOwz1B5to/Relat%C3%B3rios-de-subidas-para-produ%C3%A7%C3%A3o?node-id=1%3A23&t=eqYE6lGDAfIVr5q6-1
 
 # Checklist
 
