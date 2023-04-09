@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer-project.component.css']
 })
 export class FooterProjectComponent {
+  footerPhase = '© 2023 Copyright';
 
 }
