@@ -1,0 +1,7 @@
+<h3>Últimas atualizações de relatórios</h3>
+<ul>
+    <li *ngFor="let report of reports">
+<app-reporting-information [instanceName] ="report.instanceName" [updateDate] = "report.updateDate" [createdBy] = "report.createdBy"></app-reporting-information>
+    </li> 
+    </ul>
+
