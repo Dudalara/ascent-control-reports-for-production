@@ -1,0 +1,102 @@
+<div class="container">
+    <form #form="ngForm" (submit)="onSubmit()">
+        <div class="form-group">
+            <label for="instance-name">Nome da instância</label>
+            <input 
+                type="text" 
+                id="instance-name" 
+                name="instance-name"
+                class="form-control"
+                [(ngModel)]="this.report.instanceName"
+                #instanceName="ngModel"
+                required
+            >
+            <div class="red-text" [hidden]="instanceName.valid || instanceName.untouched">
+                O nome da instância é obrigatório.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="update-set">Updated Set</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="updated-set"
+                name="updated-set"
+                [(ngModel)]="this.report.updatedSet"
+                #updatedSet="ngModel"
+                required
+            >
+            <div class="red-text" [hidden]="updatedSet.valid || updatedSet.untouched">
+                O nome do updated set é obrigatório.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Autor</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="author"
+                name="author"
+                [(ngModel)]="this.report.author"
+                #author="ngModel"
+                required
+            >
+            <div class="red-text" [hidden]="author.valid || author.untouched">
+                O nome do autor é obrigatório.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="update-date">Data de atualização</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="update-date"
+                name="update-date"
+                [(ngModel)]="this.report.updateDate"
+                #updateDate="ngModel"
+                pattern="^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$"
+                required
+            >
+            <div class="red-text" [hidden]="updateDate.valid || updateDate.untouched">
+                Formato válido dd/mm/yyyy e obrigatório.
+            </div>
+        </div> 
+        <div class="form-group">
+            <label for="created-component">Componentes criados</label>
+            <textarea 
+                rows="3"
+                type="text" 
+                class="form-control" 
+                id="created-component"
+                name="created-component"
+                [(ngModel)]="this.report.createdComponent"
+                #createdComponent="ngModel"
+                required   
+            >
+            </textarea>
+            <div class="red-text" [hidden]="createdComponent.valid || createdComponent.untouched">
+                Componentes criados é obrigatório.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comments">Observações</label>
+            <textarea
+                rows="3"
+                type="text" 
+                class="form-control" 
+                id="comments"
+                name="comments"
+                [(ngModel)]="this.report.comments"
+                #comments ="ngModel"
+            >
+            </textarea>
+        </div> 
+        <button 
+            class="waves-effect waves-light btn"
+            type="submit"
+            [disabled]="!form.valid"
+        >
+            Novo
+    </button>
+    </form>
+</div>
