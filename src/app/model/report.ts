@@ -1,6 +1,6 @@
 
 export class Report {
-  instanceName: string;
+  instanceId: string;
   updatedSet: string;
   author: string;
   updateDate: Date;

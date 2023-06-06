@@ -3,11 +3,13 @@ import { Injectable } from '@angular/core';
 import { Report } from '../model/report';
 import { WebStorageUtil } from 'src/app/util/web-storage-util';
 
+
 @Injectable({
   providedIn: 'root',
 })
 export class ReportService {
   reports!: Report[];
+  public items: any[] = [];
   constructor() {
     this.reports = WebStorageUtil.get(Constants.REPORTS_KEY);
   }
@@ -21,5 +23,11 @@ export class ReportService {
   getReports(): Report[] {
     this.reports = WebStorageUtil.get(Constants.REPORTS_KEY);
     return this.reports;
+  }
+
+  
+
+  ngOnInit(): void {
+   
   }
 }

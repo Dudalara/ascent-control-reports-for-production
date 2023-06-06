@@ -11,6 +11,8 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReportingInformationComponent } from './reporting-information/reporting-information.component';
 import { ReportComponent } from './report/report.component';
+import { HttpClientModule } from '@angular/common/http';
+import { InstanceComponent } from './instance/instance.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +24,14 @@ import { ReportComponent } from './report/report.component';
     LoginComponent,
     DashboardComponent,
     ReportingInformationComponent,
-    ReportComponent
+    ReportComponent,
+    InstanceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

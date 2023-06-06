@@ -1,0 +1,26 @@
+<div class="container">
+    <form #form="ngForm" (submit)="onSubmit()">
+        <div class="form-group">
+            <label for="instance-name">Nome da instância</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="instance-name"
+                name="instance-name"
+                [(ngModel)]="this.instance.name"
+                #name="ngModel"
+                required
+            >
+            <div class="red-text" [hidden]="name.valid || name.untouched">
+                O nome do updated set é obrigatório.
+            </div>
+        </div>
+        <button 
+            class="waves-effect waves-light btn"
+            type="submit"
+            [disabled]="!form.valid"
+        >
+            Novo
+    </button>
+    </form>
+</div>
