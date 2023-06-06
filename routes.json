@@ -1,0 +1,6 @@
+{
+    "/instancias":"/instances",
+    "/instancias/:id":"/instances/:id",
+    "/relatorios":"/reports",
+    "/relatorios/:id":"/reports/:id"
+}

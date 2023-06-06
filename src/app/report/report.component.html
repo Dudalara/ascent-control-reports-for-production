@@ -2,16 +2,17 @@
     <form #form="ngForm" (submit)="onSubmit()">
         <div class="form-group">
             <label for="instance-name">Nome da instância</label>
-            <input 
+            <select 
                 type="text" 
                 id="instance-name" 
                 name="instance-name"
                 class="form-control"
-                [(ngModel)]="this.report.instanceName"
-                #instanceName="ngModel"
-                required
-            >
-            <div class="red-text" [hidden]="instanceName.valid || instanceName.untouched">
+                [(ngModel)]="this.report.instanceId"
+                #instanceId="ngModel"
+                required>
+                <option *ngFor="let instance of instances">{{ instance.name }}</option>
+            </select>
+            <div class="red-text" [hidden]="instanceId.valid || instanceId.untouched">
                 O nome da instância é obrigatório.
             </div>
         </div>
