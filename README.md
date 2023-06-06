@@ -19,8 +19,8 @@ https://www.figma.com/file/gGRtZy5LVf569DOwz1B5to/Relat%C3%B3rios-de-subidas-par
  - [ ] Passar dados entre componentes que representam diferentes telas via parâmetros de rotas.
  - [X] Validar campos do formulário com REGEX e apresentar os erros.
  - [X] Desabilitar o botão de submit enquanto o formulário está inválido.
- - [ ] Fazer requisições a API com tratamento da resposta com Promises ou Observables.
- - [ ] Cadastrar uma entidade no JSON Server.
+ - [X] Fazer requisições a API com tratamento da resposta com Promises ou Observables.
+ - [X] Cadastrar uma entidade no JSON Server.
  - [ ] Apresentar uma lista de dados com a diretiva estrutural ngFor.
  - [ ] Usar a diretiva ngIf
  - [ ] Formatar a apresentação de dados com Pipes.
