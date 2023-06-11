@@ -7,12 +7,12 @@
                 id="instance-name" 
                 name="instance-name"
                 class="form-control"
-                [(ngModel)]="this.report.instanceId"
-                #instanceId="ngModel"
+                [(ngModel)]="this.report.instanceName"
+                #instanceName="ngModel"
                 required>
                 <option *ngFor="let instance of instances">{{ instance.name }}</option>
             </select>
-            <div class="red-text" [hidden]="instanceId.valid || instanceId.untouched">
+            <div class="red-text" [hidden]="instanceName.valid || instanceName.untouched">
                 O nome da instância é obrigatório.
             </div>
         </div>

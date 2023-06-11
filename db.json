@@ -1,109 +1,71 @@
 {
-  "instances": [
-    {
-      "id": 1,
-      "name": "BlueSky Technologies"
-    },
-    {
-      "id": 2,
-      "name": "Infinite Robotics"
-    },
-    {
-      "id": 3,
-      "name": "MagnaTech Industries"
-    },
-    {
-      "id": 4,
-      "name": "Omega Energy Group"
-    },
-    {
-      "id": 5,
-      "name": "Sunflower Foods"
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 38.377007268427036
-    },
-    {
-      "id": 361
-    },
-    {
-      "id": 17
-    },
-    {
-      "id": 426
-    },
-    {
-      "id": 293
-    },
-    {
-      "id": 270
-    },
-    {
-      "id": 288
-    },
-    {
-      "name": "dfgdfgf",
-      "id": 191
-    },
-    {
-      "name": "dfdf",
-      "id": 53
-    }
-  ],
-  "reports": [
-    {
-      "id": 1,
-      "instanceId": "2",
-      "updatedSet": "Caso 2563",
-      "author": "eduarda",
-      "updateDate": "10/01/2023",
-      "createdComponent": "teste 1",
-      "comments": "teste 1"
-    },
-    {
-      "id": 2,
-      "instanceId": "2",
-      "updatedSet": "Caso 6531",
-      "author": "maria",
-      "updateDate": "15/02/23",
-      "createdComponent": "teste",
-      "comments": "teste"
-    },
-    {
-      "id": 3,
-      "instanceId": "1",
-      "updatedSet": "Caso 3659",
-      "author": "joão",
-      "updateDate": "30/03/2023",
-      "createdComponent": "teste",
-      "comments": "teste"
-    },
-    {
-      "id": 4,
-      "instanceId": "3",
-      "updatedSet": "Caso 5462",
-      "author": "ciclano",
-      "updateDate": "05/04/2023",
-      "createdComponent": "teste",
-      "comments": "teste"
-    },
-    {
-      "id": 5,
-      "instanceId": "4",
-      "updatedSet": "Caso 6396",
-      "author": "fulano",
-      "updateDate": "01/05/2023",
-      "createdComponent": "teste",
-      "comments": "teste"
-    }
-  ]
+  "instances": [ 
+        {
+            "id": 1,
+            "name": "BlueSky Technologies"
+        },
+        {
+            "id": 2,
+            "name": "Infinite Robotics"
+        },
+        {
+            "id": 3,
+            "name": "MagnaTech Industries"
+        },
+        {
+            "id": 4,
+            "name": "Omega Energy Group"
+        },
+        {
+            "id": 5,
+            "name": "Sunflower Foods"
+        }
+    ],
+    "reports" : [
+        {
+            "id": 1,
+            "instanceName":"2",
+            "updatedSet":"Caso 2563",
+            "author":"eduarda",
+            "updateDate":"10/01/2023",
+            "createdComponent":"teste 1",
+            "comments": "teste 1"
+        },
+        {
+            "id": 2,
+            "instanceName":"2",
+            "updatedSet":"Caso 6531",
+            "author":"maria",
+            "updateDate":"15/02/23",
+            "createdComponent":"teste",
+            "comments":"teste"
+        },
+        {
+            "id": 3,
+            "instanceName":"1",
+            "updatedSet":"Caso 3659",
+            "author":"joão",
+            "updateDate":"30/03/2023",
+            "createdComponent":"teste",
+            "comments":"teste"
+        },
+        {
+            "id": 4,
+            "instanceName":"3",
+            "updatedSet":"Caso 5462",
+            "author":"ciclano",
+            "updateDate":"05/04/2023",
+            "createdComponent":"teste",
+            "comments":"teste"
+        },
+        {
+            "id": 5,
+            "instanceName":"4",
+            "updatedSet":"Caso 6396",
+            "author":"fulano",
+            "updateDate":"01/05/2023",
+            "createdComponent":"teste",
+            "comments":"teste"
+        }
+    ]
 }

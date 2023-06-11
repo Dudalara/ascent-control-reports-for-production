@@ -6,7 +6,7 @@ import { Report } from '../model/report';
 import { Instance } from '../model/instance';
 import { ReportService } from './report.service';
 import { WebStorageUtil } from 'src/app/util/web-storage-util';
-import { InstancePromiseService } from '../services/instance-promise.serice';
+import { InstancePromiseService } from '../services/instance-promise.service';
 
 @Component({
   selector: 'app-report',
@@ -27,14 +27,14 @@ export class ReportComponent implements OnInit{
   message!: string;
 
   constructor(
-    private userService: ReportService,
+    private reportService: ReportService,
     private instancePromiseService: InstancePromiseService
     ) {}
 
   ngOnInit(): void {
     Shared.initializeWebStorage();
     this.report = new Report();
-    this.reports = this.userService.getReports();
+    this.reports = this.reportService.getReports();
     this.instancePromiseService.getInstances().then((instances: Instance[]) => {
       this.instances = instances;
     })
@@ -45,13 +45,24 @@ export class ReportComponent implements OnInit{
 
   onSubmit() {
     this.isSubmitted = true;
-      this.userService.save(this.report);
+    this.reportService.save(this.report);
+
+
+    this.reportService.saveInHttp(this.report)
+    .subscribe(
+      (response: any) => {
+        console.log('Relatório cadastrado com sucesso:', response);
+      },
+      (error: any) => {
+        console.error('Erro ao cadastrar entidade:', error);
+      }
+    );
     
     this.isShowMessage = true;
     this.isSuccess = true;
     this.message = 'Cadastro realizado com sucesso!';
     this.form.reset();
     this.report = new Report();
-    this.reports = this.userService.getReports();
+    this.reports = this.reportService.getReports();
   }
 }
