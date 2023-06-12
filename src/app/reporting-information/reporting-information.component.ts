@@ -8,6 +8,6 @@ import { Input,Component } from '@angular/core';
 export class ReportingInformationComponent {
   @Input() instanceName: string; 
   @Input() updateDate: Date; 
-  @Input() createdBy: string; 
+  @Input() author: string; 
 
 }

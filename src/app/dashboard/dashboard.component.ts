@@ -1,28 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Report } from '../model/report';
+import { ReportPromiseService } from '../services/report-service.service';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent {
 
-   reports = [
-    {
-      "instanceName": "teste 1",
-      "updateDate":new Date('2023-01-03'),
-      "createdBy": "fulano",
-    },
-    {
-      "instanceName": "teste 2",
-      "updateDate":new Date('2023-02-11'),
-      "createdBy": "ciclano",
-    }, 
-    {
-      "instanceName": "teste 3",
-      "updateDate":new Date('2023-04-10'),
-      "createdBy": "beltrano",
-    },   
-  ]
+export class DashboardComponent implements OnInit{
+   
+  reports: Report[] = [];
+
+  constructor(
+    private reportPromiseService: ReportPromiseService
+    ) {}
+
+  ngOnInit(): void {
+    this.reportPromiseService.getReports().then((reports: Report[]) => {
+      this.reports = reports;
+      console.log(reports);
+    })
+    .catch((error: any) => {
+      console.error('Erro ao obter relatórios:', error);
+    });
+  }
 
 }

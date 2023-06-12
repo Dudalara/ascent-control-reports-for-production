@@ -15,10 +15,6 @@ export class InstancePromiseService {
 
   constructor(private httpClient: HttpClient) {}
 
-  /*getDataFromJSON(def: () => Promise<Instance[]>) {
-    return this.httpClient.get<Instance[]>(this.URL).toPromise();
-  }*/
-
   getInstances(): Promise<Instance[]> {
     return this.httpClient.get<Instance[]>(`${this.URL}`)
       .toPromise()

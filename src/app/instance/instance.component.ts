@@ -27,14 +27,11 @@ export class InstanceComponent {
   }
 
   onSubmit() {
-    const min = 10;
-    const max = 500;
-    console.log(this.instance.name);
-    this.instance.id =  Math.floor(Math.random() * (max - min + 1) + min);
+  
      this.instanceService.save(this.instance)
       .subscribe(
         (response: any) => {
-          console.log('Entidade cadastrada com sucesso:', this.instance);
+          console.log('Instância cadastrada com sucesso:', response);
         },
         (error: any) => {
           console.error('Erro ao cadastrar entidade:', error);
