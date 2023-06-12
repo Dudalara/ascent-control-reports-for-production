@@ -1,10 +1,12 @@
 <h3>Últimas atualizações de relatórios</h3>
-<ul>
-    <li *ngFor="let report of reports">
-<app-reporting-information [instanceName] ="report.instanceName" [updateDate] = "report.updateDate" [author] = "report.author"></app-reporting-information>
-    </li> 
+    <ul>
+        <li *ngFor="let report of reports">
+            <app-reporting-information [instanceName] ="report.instanceName" [updateDate] = "report.updateDate" [author] = "report.author"></app-reporting-information>
+        </li> 
     </ul>
-
+    <div *ngIf="reports.length === 0">
+        <p>Nenhum dado disponível.</p>
+      </div>
     <a [routerLink]="['/new-report']" >
         Novo relatório
        </a>
