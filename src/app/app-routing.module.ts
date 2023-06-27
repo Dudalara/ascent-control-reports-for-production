@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReportingInformationComponent } from './reporting-information/reporting-information.component';
 import { ReportComponent } from './report/report.component';
 import { InstanceComponent } from './instance/instance.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path:'dashboard', component: DashboardComponent,
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path:'new-instance', component: InstanceComponent,
+  },
+  {
+    path:'', component: HomeComponent,
   }
 ];
 
