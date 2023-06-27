@@ -1,7 +1,13 @@
-<div class="card text-center">
-  <div class="card-body">
-    <p>Instancia: {{ instanceName | uppercase}}</p>
-    <p>Ultima atualização: {{ updateDate}}</p>
-    <p>Autor: {{ author }}</p>
+
+<div class=" d-flex justify-content-center mt-5">  
+  <div class="card text-center col-lg-6">
+    <div class="card-body">
+      <p>Instancia: {{ instanceName | uppercase}}</p>
+      <p>Ultima atualização: {{ updateDate}}</p>
+      <p>Autor: {{ author }}</p>
+    </div>
+    <a [routerLink]="['/new-report']" >
+      Visualizar relatório
+    </a>
   </div>
-</div>
+</div> 

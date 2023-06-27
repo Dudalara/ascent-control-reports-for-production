@@ -1,5 +1,5 @@
 <h3>Últimas atualizações de relatórios</h3>
-    <ul>
+    <ul style="list-style: none;">
         <li *ngFor="let report of reports">
             <app-reporting-information [instanceName] ="report.instanceName" [updateDate] = "report.updateDate" [author] = "report.author"></app-reporting-information>
         </li> 
