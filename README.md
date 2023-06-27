@@ -5,6 +5,9 @@ Projeto realizado para disciplina Tópicos Especiais em Web com o tema Relatóri
 # Protótipo 
 https://www.figma.com/file/gGRtZy5LVf569DOwz1B5to/Relat%C3%B3rios-de-subidas-para-produ%C3%A7%C3%A3o?node-id=1%3A23&t=eqYE6lGDAfIVr5q6-1
 
+# Github Pages
+https://dudalara.github.io/ascent-control-reports-for-production/
+
 # Checklist
 
  - [X] Criar o repositório no GitHub com a estrutura do Gitflow, ou seja, branches main e develop.
