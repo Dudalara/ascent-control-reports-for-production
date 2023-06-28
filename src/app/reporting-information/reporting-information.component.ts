@@ -9,5 +9,6 @@ export class ReportingInformationComponent {
   @Input() instanceName: string; 
   @Input() updateDate: Date; 
   @Input() author: string; 
+  @Input() id: number;
 
 }

@@ -19,7 +19,6 @@ export class DashboardComponent implements OnInit{
   ngOnInit(): void {
     this.reportPromiseService.getReports().then((reports: Report[]) => {
       this.reports = reports;
-      console.log(reports);
     })
     .catch((error: any) => {
       console.error('Erro ao obter relatórios:', error);
