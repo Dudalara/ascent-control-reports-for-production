@@ -20,4 +20,12 @@ export class ReportPromiseService {
       .toPromise()
       .then((reports: Report[] | undefined) => reports || []);
   }
+
+  getReportById(id: number): Promise<Report | undefined> {
+    return this.httpClient.get<Report>(`${this.URL}/${id}`)
+      .toPromise()
+      .then((report: Report | undefined) => report || undefined);
+  }
+
+
 }

@@ -13,6 +13,7 @@ import { ReportComponent } from './report/report.component';
 import { HttpClientModule } from '@angular/common/http';
 import { InstanceComponent } from './instance/instance.component';
 import { HomeComponent } from './home/home.component';
+import { ReportIndividualViewComponent } from './report-individual-view/report-individual-view.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeComponent } from './home/home.component';
     ReportingInformationComponent,
     ReportComponent,
     InstanceComponent,
-    HomeComponent
+    HomeComponent,
+    ReportIndividualViewComponent
   ],
   imports: [
     BrowserModule,
