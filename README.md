@@ -19,7 +19,7 @@ https://dudalara.github.io/ascent-control-reports-for-production/
  - [X] Passar dados via hierarquia de componentes, ou seja, usando @Input ou @Output.
  - [X] Mapear componentes à rotas no módulo de rotas.
  - [X] Criar navegação entre páginas por meio de rotas.
- - [ ] Passar dados entre componentes que representam diferentes telas via parâmetros de rotas.
+ - [X] Passar dados entre componentes que representam diferentes telas via parâmetros de rotas.
  - [X] Validar campos do formulário com REGEX e apresentar os erros.
  - [X] Desabilitar o botão de submit enquanto o formulário está inválido.
  - [X] Fazer requisições a API com tratamento da resposta com Promises ou Observables.
