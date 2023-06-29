@@ -15,7 +15,7 @@ https://dudalara.github.io/ascent-control-reports-for-production/
  - [X] Apresentar as telas com layout responsivo usando ou não algum framework CSS.
  - [X] Construir páginas web com o conceito de componentes.
  - [X] Criar o layout da aplicação com componentes, ou seja, o cabeçalho e rodapé precisam ser componentes.
- - [ ] Usar pelo menos dois tipos de data-binding (Interpolation, Property Binding, Event Binding e Two Way Data Binding).
+ - [X] Usar pelo menos dois tipos de data-binding (Interpolation, Property Binding, Event Binding e Two Way Data Binding).
  - [X] Passar dados via hierarquia de componentes, ou seja, usando @Input ou @Output.
  - [X] Mapear componentes à rotas no módulo de rotas.
  - [X] Criar navegação entre páginas por meio de rotas.
